@@ -1,7 +1,7 @@
-import logo from "../../../assets/img/logo.png";
-import searchImage from "../../../assets/img/search.png";
-import favoriteImage from "../../../assets/img/heart.png";
-import cartImage from "../../../assets/img/cart.png";
+import logo from "../assets/img/logo.png";
+import searchImage from "../assets/img/search.png";
+import favoriteImage from "../assets/img/heart.png";
+import cartImage from "../assets/img/cart.png";
 
 export const Header = () => {
   return (
