@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const API_URL = process.env.REACT_APP_API_URL ? process.env.REACT_APP_API_URL : 'https://fakestoreapi.com/products/';
+export const API_URL = process.env.REACT_APP_API_URL ? process.env.REACT_APP_API_URL : '?';
 
 const $api = axios.create({
     baseURL: API_URL,
@@ -33,7 +33,19 @@ $api.interceptors.request.use(
 
 export default class API {
     static async getAllProducts() {
-        return await $api.get(`/products/`);
+        return await $api.get(`https://fakestoreapi.com/products`);
+    }
+    static async getSingleProduct(id) {
+        return await $api.get(`'https://fakestoreapi.com/products/${id}`);
+    }
+    static async getAllCarts() {
+        return await $api.get(`https://fakestoreapi.com/carts`);
+    }
+    static async getSingleCart(id) {
+        return await $api.get(`'https://fakestoreapi.com/carts/${id}`);
+    }
+    static async authLogin(user) {
+        return await $api.post(`'https://fakestoreapi.com/auth/login`, user);
     }
 
 }

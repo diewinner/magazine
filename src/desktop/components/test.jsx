@@ -4,10 +4,9 @@ import API from '../../http/index';
 export const Test = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
-            .then(res=>res.json())
-            .then(json=>console.log(json))
-    }, [])
+        API.getAllProducts()
+            .then(r => setProducts(r.data))
+    }, [setProducts])
     console.log(products)
     return (
         <div>hu</div>
