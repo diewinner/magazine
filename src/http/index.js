@@ -36,16 +36,16 @@ export default class API {
         return await $api.get(`https://fakestoreapi.com/products`);
     }
     static async getSingleProduct(id) {
-        return await $api.get(`'https://fakestoreapi.com/products/${id}`);
+        return await $api.get(`https://fakestoreapi.com/products/${id}`);
     }
     static async getAllCarts() {
         return await $api.get(`https://fakestoreapi.com/carts`);
     }
     static async getSingleCart(id) {
-        return await $api.get(`'https://fakestoreapi.com/carts/${id}`);
+        return await $api.get(`https://fakestoreapi.com/carts/${id}`);
     }
     static async authLogin(user) {
-        return await $api.post(`'https://fakestoreapi.com/auth/login`, user);
+        return await $api.post(`https://fakestoreapi.com/auth/login`, user);
     }
 
 }

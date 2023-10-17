@@ -1,7 +1,8 @@
 import {useEffect, useState} from "react";
-import API from '../../http/index';
+import API from '../../../../http';
+import {Header} from "./header";
 
-export const Test = () => {
+export const MainPage = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
         API.getAllProducts()
@@ -9,6 +10,8 @@ export const Test = () => {
     }, [setProducts])
     console.log(products)
     return (
-        <div>hu</div>
+        <>
+            <Header/>
+        </>
     )
 }
