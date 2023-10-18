@@ -1,12 +1,10 @@
 import './App.css';
-import {MainPage} from "./desktop/components/pages/mainPage/mainPage";
-import {Header} from "./desktop/components/header";
+import {MainSPA} from "./desktop/components/mainSPA";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <MainPage/>
+        <MainSPA/>
     </div>
   );
 }

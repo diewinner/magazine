@@ -48,4 +48,5 @@ export default class API {
         return await $api.post(`https://fakestoreapi.com/auth/login`, user);
     }
 
+
 }

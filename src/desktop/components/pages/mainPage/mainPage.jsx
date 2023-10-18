@@ -1,13 +1,7 @@
-import {useEffect, useState} from "react";
-import API from '../../../../http';
+
 
 export const MainPage = () => {
-    const [products, setProducts] = useState([])
-    useEffect(() => {
-        API.getAllProducts()
-            .then(r => setProducts(r.data))
-    }, [setProducts])
-    console.log(products)
+
     return (
         <div className={'d_main_page_container'}>
             <div className={'d_main_page_wrapper'}>
