@@ -1,0 +1,58 @@
+.d_avone_container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 120px;
+}
+
+.d_avone_main_info_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+}
+
+.d_avone_main_info_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    margin-bottom: 41px;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    &__border {
+      background-color: black;
+      width: 168px;
+      height: 1px;
+    }
+  }
+  &__text:hover {
+    transform: scale(1.02);
+  }
+  &__background {
+    position: absolute;
+    bottom: 22px;
+    right: 235px;
+    background-color: white;
+    width: 227px;
+    height: 281px;
+    z-index: 1;
+    &__img {
+      position: absolute;
+      bottom: 0;
+      right: 215px;
+      z-index: 2;
+    }
+  }
+}
+
+.d_avone_main_info_item:first-child {
+  margin-top: 87px;
+}
+

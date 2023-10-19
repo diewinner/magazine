@@ -1,9 +1,11 @@
 import {useEffect, useState} from "react";
 import {Header} from "./header";
 import {MainPage} from "./pages/mainPage/mainPage";
-import {CategoryPage} from "./categoryPage/categoryPage";
-import {ClothesPage} from "./clothesPage/clothesPage";
+import {CategoryPage} from "./pages/categoryPage/categoryPage";
+import {ClothesPage} from "./pages/clothesPage/clothesPage";
 import API from "../../http";
+import {AvoneStylePage} from "./pages/avoneStylePage/avoneStylePage";
+import {Footer} from "./footer";
 
 export const MainSPA = () => {
 
@@ -54,8 +56,10 @@ export const MainSPA = () => {
                   <CategoryPage/>
                   <ClothesPage clothes={clothesWomenArr.slice(0,4)} title={titles.women} description={titles.description}/>
                   <ClothesPage clothes={clothesMenArr} title={titles.men} description={titles.description}/>
+                  <AvoneStylePage/>
               </div>
           </div>
+          <Footer/>
       </div>
   )
 }
