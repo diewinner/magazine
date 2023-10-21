@@ -59,6 +59,13 @@
           fill: red;
         }
       }
+      &__active {
+        svg {
+          path {
+            fill: red;
+          }
+        }
+      }
     }
     &__cart {
       svg {
