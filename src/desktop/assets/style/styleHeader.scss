@@ -40,8 +40,22 @@ ul {
       width: 20px;
       transition: 0.5s;
       cursor: pointer;
+      &__favorite {
+        @extend .d_nav_container__btns__item;
+        &:hover {
+          transform: scale(1.2);
+          svg {
+            path{
+              fill: red;
+            }
+          }
+        }
+      }
       &:hover {
         transform: scale(1.2);
+        svg {
+          fill: #808080;
+        }
       }
       img {
         height: 100%;

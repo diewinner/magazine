@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react";
+import API from "../../http";
 import {Header} from "./header";
 import {MainPage} from "./pages/mainPage/mainPage";
 import {CategoryPage} from "./pages/categoryPage/categoryPage";
 import {ClothesPage} from "./pages/clothesPage/clothesPage";
-import API from "../../http";
 import {AvoneStylePage} from "./pages/avoneStylePage/avoneStylePage";
 import {Footer} from "./footer";
 

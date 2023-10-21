@@ -1,9 +1,13 @@
 import logo from "../assets/img/logo.png";
-import favoriteImage from "../assets/img/heart.png";
-import cartImage from "../assets/img/cart.png";
+import {HeartFavoriteSvg} from "../assets/img/svg/heartFavorite_icon";
+import {CartSvg} from "../assets/img/svg/cart_icon";
 
 export const Header = () => {
+
+
     const navigation = ['home', 'shop']
+
+
   return (
       <header className={'d_header_container'}>
           <div className={'d_header_logo'}>
@@ -17,8 +21,8 @@ export const Header = () => {
               </ul>
           </nav>
           <div className={'d_nav_container__btns'}>
-              <div className={'d_nav_container__btns__item'}><img src={favoriteImage} alt={'favoriteImg'}/></div>
-              <div className={'d_nav_container__btns__item'}><img src={cartImage} alt={'cartImg'}/></div>
+              <div className={'d_nav_container__btns__item__favorite'} ><HeartFavoriteSvg/></div>
+              <div className={'d_nav_container__btns__item'} ><CartSvg/></div>
           </div>
       </header>
   )
