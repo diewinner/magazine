@@ -1,14 +1,14 @@
-.d_main_spa_container {
-  display: flex;
-  flex-direction: column;
-  gap: 120px;
-}
-
-.d_main_spa_wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 1592px;
+.d_main_spa {
+  max-width: 2560px;
   margin: 0 auto;
-  gap: 120px;
-
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+  }
 }

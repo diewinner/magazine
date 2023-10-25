@@ -5,6 +5,23 @@
 @use "./desktop/assets/style/pages/styleCategoryPage.scss";
 @use "./desktop/assets/style/pages/styleClothesPage.scss";
 @use "./desktop/assets/style/pages/styleAvonePage.scss";
+
+@use "./tablet/assets/styles/styleTablet.scss";
+@use "./tablet/assets/styles/styleHeaderTablet.scss";
+@use "./tablet/assets/styles/styleFooterTablet.scss";
+@use "./tablet/assets/styles/pages/tabletStyleMainPage";
+@use "./tablet/assets/styles/pages/tabletStyleCategoryPage";
+@use "./tablet/assets/styles/pages/tabletStyleClothesPage";
+
+@use "./mobile/assets/style/styleMobile.scss";
+@use "./mobile/assets/style/styleHeaderMobile.scss";
+@use "./mobile/assets/style/styleFooterMobile.scss";
+@use "./mobile/assets/style/pages/mobileStyleMainPage";
+@use "./mobile/assets/style/pages/mobileStyleCategoryPage";
+@use "./mobile/assets/style/pages/mobileStyleClothesPage";
+
+@use "./global/assets/style/rootStyle.scss";
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 body {
@@ -14,5 +31,6 @@ body {
   font-family:  'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 

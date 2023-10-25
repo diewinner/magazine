@@ -1,7 +1,7 @@
-import firstImg from '../../../assets/img/2.png'
-import secImg from '../../../assets/img/3.png'
-import thirdImg from '../../../assets/img/4.png'
-import fourImg from '../../../assets/img/14.png'
+import firstImg from '../../../../global/assets/img/2.png'
+import secImg from '../../../../global/assets/img/3.png'
+import thirdImg from '../../../../global/assets/img/4.png'
+import fourImg from '../../../../global/assets/img/14.png'
 
 export const CategoryPage = () => {
   return (

@@ -1,6 +1,6 @@
-import firstImg from '../../../assets/img/14.png'
-import secImg from '../../../assets/img/15.png'
-import thirdImg from '../../../assets/img/16.png'
+import firstImg from '../../../../global/assets/img/14.png'
+import secImg from '../../../../global/assets/img/15.png'
+import thirdImg from '../../../../global/assets/img/16.png'
 export const AvoneStylePage = () => {
 
     const mockTitle = {

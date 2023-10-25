@@ -1,12 +1,21 @@
 import './App.css';
-import {MainSPA} from "./desktop/components/mainSPA";
+import useWindowSize from "./hooks/useWindowSize";
+import {MainSpaDesktop} from "./desktop/routes/mainSpaDesktop";
+import {MainSpaTablet} from "./tablet/routes/mainSpaTablet";
+import {MainSpaMobile} from "./mobile/routes/mainSpaMobile";
 
 function App() {
-  return (
-    <div className="App">
-        <MainSPA/>
-    </div>
-  );
+
+    const windowSize = useWindowSize()
+
+    if (windowSize.desktop) {
+        return <MainSpaDesktop />;
+    } else if (windowSize.tablet) {
+        return <MainSpaTablet />;
+    } else if (windowSize.mobile) {
+        return <MainSpaMobile />;
+    }
+
 }
 
 export default App;

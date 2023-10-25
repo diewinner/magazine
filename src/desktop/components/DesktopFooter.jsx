@@ -1,13 +1,13 @@
-import logoFooter from '../assets/img/logo_footer.png'
-import  {VkSvg} from '../assets/img/svg/vk_icon.jsx'
-import  {FacebookSvg} from '../assets/img/svg/facebook_icon.jsx'
-import  {InstSvg} from '../assets/img/svg/inst_icon.jsx'
-import  {LocationSvg} from '../assets/img/svg/location_icon.jsx'
+import logoFooter from '../../global/assets/img/logo_footer.png'
+import  {VkSvg} from '../../global/assets/img/svg/vk_icon.jsx'
+import  {FacebookSvg} from '../../global/assets/img/svg/facebook_icon.jsx'
+import  {InstSvg} from '../../global/assets/img/svg/inst_icon.jsx'
+import  {LocationSvg} from '../../global/assets/img/svg/location_icon.jsx'
 
 
-export const Footer = () => {
+export const DesktopFooter = () => {
     return (
-        <div className={'d_footer_container'}>
+        <footer className={'d_footer_container'}>
                 <div className={'d_footer_wrapper'}>
                     <div className={'d_footer_contact'}>
                         <div className={'d_footer_contact__info'}>
@@ -92,6 +92,6 @@ export const Footer = () => {
                     <div className={'d_footer_company'}>
                         Copyright © 2020 . Shop Wear All rights reserved
                     </div>
-        </div>
+        </footer>
     )
 }

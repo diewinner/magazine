@@ -1,6 +1,6 @@
 
 
-export const MainPage = () => {
+export const DesktopMainPage = () => {
 
     return (
         <div className={'d_main_page_container'}>

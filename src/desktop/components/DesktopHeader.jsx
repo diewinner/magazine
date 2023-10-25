@@ -1,12 +1,9 @@
-import logo from "../assets/img/logo.png";
-import {HeartFavoriteSvg} from "../assets/img/svg/heartFavorite_icon";
-import {CartSvg} from "../assets/img/svg/cart_icon";
+import logo from "../../global/assets/img/logo.png";
+import {HeartFavoriteSvg} from "../../global/assets/img/svg/heartFavorite_icon";
+import {CartSvg} from "../../global/assets/img/svg/cart_icon";
+import {navigation} from "../../global/const/titles";
 
-export const Header = () => {
-
-
-    const navigation = ['home', 'shop']
-
+export const DesktopHeader = () => {
 
   return (
       <header className={'d_header_container'}>

@@ -1,0 +1,12 @@
+
+
+.m_main_spa {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  &__wrapper {
+  @extend .m_main_spa__container;
+  }
+}
