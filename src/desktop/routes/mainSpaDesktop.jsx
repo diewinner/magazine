@@ -1,11 +1,11 @@
 import {useEffect, useState} from "react";
 import API from "../../http";
-import {DesktopHeader} from "../components/DesktopHeader";
+import {DesktopHeader} from "../components/desktopHeader";
 import {DesktopMainPage} from "../components/pages/mainPage/DesktopMainPage";
 import {CategoryPage} from "../components/pages/categoryPage/categoryPage";
 import {ClothesPage} from "../components/pages/clothesPage/clothesPage";
 import {AvoneStylePage} from "../components/pages/avoneStylePage/avoneStylePage";
-import {DesktopFooter} from "../components/DesktopFooter";
+import {DesktopFooter} from "../components/desktopFooter";
 import clothesFilter from "../../global/ui/filterClothes";
 import {titlesClothes as titles} from "../../global/const/titles";
 

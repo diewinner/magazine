@@ -18,7 +18,6 @@ export const MobileHeader = () => {
         } else {
             dispatch(offMenuAction(false))
         }
-
     }
 
     return (
