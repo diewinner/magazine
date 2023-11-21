@@ -8,9 +8,9 @@
 
 .d_avone_main_info_container {
   display: flex;
-  width: 1592px;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -39,7 +39,7 @@
   &__background {
     position: absolute;
     bottom: 22px;
-    right: 161px;
+    right: -15px;
     background-color: white;
     width: 227px;
     height: 281px;
@@ -47,7 +47,7 @@
     &__img {
       position: absolute;
       bottom: 0;
-      right: 141px;
+      right: -30px;
       z-index: 2;
     }
   }

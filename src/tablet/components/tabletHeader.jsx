@@ -13,7 +13,7 @@ export const TabletHeader = () => {
           <nav className={'t_nav_container'}>
               <ul className={'t_nav_container__navigation'}>
                   {navigation.map((item) => (
-                      <li className={'t_nav_container__navigation__item'}>{item.toUpperCase()}</li>
+                      <li className={'t_nav_container__navigation__item'}>{item.name.toUpperCase()}</li>
                   ))}
               </ul>
           </nav>

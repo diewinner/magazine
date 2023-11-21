@@ -5,8 +5,8 @@ const defaultStateAuth = {
 
 
 
-const AUTH = "ADD_FAVORITE"
-const NOT_AUTH = "DELETE_FAVORITE"
+const AUTH = "AUTH"
+const NOT_AUTH = "NOT_AUTH"
 export const authReducer = (state = defaultStateAuth, action) => {
     switch (action.type) {
         case AUTH:

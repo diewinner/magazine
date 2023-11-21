@@ -35,7 +35,7 @@ export const MobileHeader = () => {
                     <nav className={'m_nav_container'}>
                         <ul className={'m_nav_container__navigation'}>
                             {navigation.map((item) => (
-                                <li className={'m_nav_container__navigation__item'}>{item.toUpperCase()}</li>
+                                <li className={'m_nav_container__navigation__item'}>{item.name.toUpperCase()}</li>
                             ))}
                         </ul>
                     </nav>

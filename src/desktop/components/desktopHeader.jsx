@@ -1,33 +1,38 @@
-import logo from "../../global/assets/img/logo.png";
-import {HeartFavoriteSvg} from "../../global/assets/img/svg/heartFavorite_icon";
-import {CartSvg} from "../../global/assets/img/svg/cart_icon";
-import {navigation} from "../../global/const/titles";
+import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {Button} from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {navigation} from "../../global/const/titles";
 import {SignInModal} from "./modal/signIn/signInModal";
-import {useState} from "react";
-export const DesktopHeader = () => {
+import {CartSvg} from "../../global/assets/img/svg/cart_icon";
+import {HeartFavoriteSvg} from "../../global/assets/img/svg/heartFavorite_icon";
+import logo from "../../global/assets/img/logo.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {OnModalAction} from "../../global/store/authReducer";
+export const DesktopHeader = ({mainRef, shopRef}) => {
+
     const dispatch = useDispatch()
     const authUser = useSelector(state => state.auth.auth)
     const [modal, setModal] = useState(false)
-
+    const authenticationUser = () => {
+        dispatch(OnModalAction(true))
+        setModal(false)
+    }
 
     return (
-      <header className={'d_header_container'}>
-          <div className={'d_header_logo'}>
+      <header className={'d_header_container'} >
+          <div className={'d_header_logo'} onClick={()=> window.scroll(0,mainRef.current.scrollTop)}>
               <img src={logo} alt={'logo'}/>
           </div>
           <nav className={'d_nav_container'}>
                   <ul className={'d_nav_container__navigation'}>
                   {navigation.map((item) => (
-                      <li className={'d_nav_container__navigation__item'}>{item.toUpperCase()}</li>
+                      <li className={'d_nav_container__navigation__item'} onClick={()=> window.scroll(0,shopRef.current.offsetTop)}>{item.name.toUpperCase()}</li>
                   ))}
                     </ul>
           </nav>
           <div className={'d_nav_container__btns'}>
               {authUser ?
-                  <div>
+                  <div className={'d_nav_container__btns__auth'}>
                       <div className={'d_nav_container__btns__item__favorite'}><HeartFavoriteSvg/></div>
                       <div className={'d_nav_container__btns__item'} ><CartSvg/></div>
                   </div>
@@ -40,7 +45,7 @@ export const DesktopHeader = () => {
           </div>
           <SignInModal
               show={modal}
-              onHide={() => setModal(false)}
+              onHide={authenticationUser}
           />
       </header>
   )

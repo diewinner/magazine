@@ -5,7 +5,7 @@ import {CartSvg} from "../../../../global/assets/img/svg/cart_icon";
 import {addCustomerAction, deleteCustomerAction} from "../../../../global/store/favoriteReducer";
 
 
-export const ClothesPage = ({title, description, clothes}) => {
+export const ClothesPage = ({ref, title, description, clothes}) => {
 
     const [clickedItems, setClickedItems] = useState({});
 
@@ -24,7 +24,7 @@ export const ClothesPage = ({title, description, clothes}) => {
 
     console.log(favorite, clickedItems)
   return (
-      <div className={'d_clothes_container'}>
+      <div className={'d_clothes_container'} ref={ref} >
           <div className={'d_clothes_title_container'}>
               <div className={'d_clothes_title_container__title'}>{title}</div>
               <div className={'d_clothes_title_container__description'}>{description}</div>

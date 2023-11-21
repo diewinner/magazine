@@ -5,24 +5,28 @@
   align-items: flex-end;
   background-image: url("../../../../global/assets/img/bg_tablet.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
-  min-height: 900px;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  width: 100%;
 }
 
 .m_main_page_wrapper {
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 27px;
+  width: 100%;
+  margin-right: 7px;
 }
 
 .m_main_page_text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   color:white;
-
+  width: 100%;
   &__item {
     font-size: 15px;
     font-weight: 500;
@@ -35,7 +39,9 @@
 
 .m_main_page_btns {
   display: flex;
-  gap: 35px;
+  gap: 7px;
+  width: 100%;
+  justify-content: flex-end;
   &__item {
     display: flex;
     justify-content: center;

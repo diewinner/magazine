@@ -3,7 +3,7 @@
 export const DesktopMainPage = () => {
 
     return (
-        <div className={'d_main_page_container'}>
+        <div className={'d_main_page_container'} >
             <div className={'d_main_page_wrapper'}>
                 <section className={'d_main_page_text'}>
                     <div className={'d_main_page_text__item'}>NEW TREND</div>

@@ -24,7 +24,7 @@
 .t_category_right_side {
   position: relative;
   height: 575px;
-  width: 525px;
+  width: 100%;
   margin: 0 auto;
   &::before {
     content: '';
@@ -50,12 +50,11 @@
     z-index: 1;
     transition: transform 0.3s;
   }
-  &__img_container {
-    position: relative;
     img {
       height: 100%;
+      width: 100%;
     }
-  }
+
 }
 
 .t_category_right_side__btn:active ~ .d_category_right_side__img_container::before {

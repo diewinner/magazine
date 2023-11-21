@@ -25,9 +25,9 @@
 .m_clothes_info_container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 15px;
 }
 
 .m_clothes_info_item {
@@ -35,7 +35,7 @@
   flex-direction: column;
   position: relative;
   gap: 35px;
-  width: 268px;
+  width: 322px;
   cursor: pointer;
   padding: 20px 25px;
   border-radius: 5px;
@@ -87,7 +87,7 @@
   }
 
   &__img {
-    width: 268px;
+    width: 100%;
     height: 370px;
     img {
       @extend .m_clothes_info_item__img;
