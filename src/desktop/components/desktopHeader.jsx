@@ -8,6 +8,7 @@ import {HeartFavoriteSvg} from "../../global/assets/img/svg/heartFavorite_icon";
 import logo from "../../global/assets/img/logo.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {OnModalAction} from "../../global/store/authReducer";
+import {Link} from "react-router-dom";
 export const DesktopHeader = ({mainRef, shopRef}) => {
 
     const dispatch = useDispatch()
@@ -19,6 +20,7 @@ export const DesktopHeader = ({mainRef, shopRef}) => {
     }
 
     return (
+        <>
       <header className={'d_header_container'} >
           <div className={'d_header_logo'} onClick={()=> window.scroll(0,mainRef.current.scrollTop)}>
               <img src={logo} alt={'logo'}/>
@@ -33,8 +35,8 @@ export const DesktopHeader = ({mainRef, shopRef}) => {
           <div className={'d_nav_container__btns'}>
               {authUser ?
                   <div className={'d_nav_container__btns__auth'}>
-                      <div className={'d_nav_container__btns__item__favorite'}><HeartFavoriteSvg/></div>
-                      <div className={'d_nav_container__btns__item'} ><CartSvg/></div>
+                      <Link className={'d_nav_container__btns__item__favorite'} to={'/favorite-items'}><HeartFavoriteSvg/></Link>
+                      <Link className={'d_nav_container__btns__item'} to={'/cart'} ><CartSvg/></Link>
                   </div>
                         :
                   <div className="d-flex gap-4">
@@ -48,5 +50,6 @@ export const DesktopHeader = ({mainRef, shopRef}) => {
               onHide={authenticationUser}
           />
       </header>
+        </>
   )
 }
